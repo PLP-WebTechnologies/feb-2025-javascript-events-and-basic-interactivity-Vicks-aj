@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGadget Hub - Interactive Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Discover Next-Gen Tech 🚀</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search gadgets..." id="searchInput">
+            <p class="key-hint">(Press 'S' to focus search)</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Product Showcase -->
+        <div class="product-carousel">
+            <div class="carousel-inner">
+                <img src="https://img.freepik.com/free-photo/woman-using-smartwatch-with-digital-assistant_23-2149108000.jpg?t=st=1746691204~exp=1746694804~hmac=b2f93ce3b6cde7e0bf676934d60388d2d115a2b0c45f0a77997f72249e0c1f55&w=996" alt="Smartwatch" class="active">
+                <img src="https://img.freepik.com/free-photo/medium-shot-man-with-vr-glasses_23-2148883495.jpg?t=st=1746691341~exp=1746694941~hmac=c36fd44d682867e9810a4965a1b61c7d6f6ea454d1766e20cd336e1c720db440&w=996" alt="VR Headset">
+                <img src="https://img.freepik.com/free-photo/professional-drone-pilot-stock-photographer_346278-265.jpg?t=st=1746692697~exp=1746696297~hmac=d3dfcc980b802f100ae3260283c5a5e8135bd12b45d5cf4d77313f311a3354ca&w=996" alt="Drone">
+            </div>
+            <button class="carousel-btn prev">‹</button>
+            <button class="carousel-btn next">›</button>
+        </div>
+
+        <!-- Featured Products -->
+        <div class="product-grid">
+            <div class="product-card" data-category="wearables">
+                <img src="https://img.freepik.com/free-photo/still-life-tech-device_23-2150722618.jpg?t=st=1746692935~exp=1746696535~hmac=d19642874e072fc2b4bf9b4a0e5ea9b34310dc49748d1ea4ecd52a30b1d7a416&w=900" alt="Smart Watch">
+                <h3>Xiaomi Smart Band 8</h3>
+                <p class="price">₦20,000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="product-details hidden">Water resistant, 2-week battery life...</div>
+            </div>
+            <!-- More product cards -->
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter">
+            <h2>Get Tech Updates ⚡</h2>
+            <form id="newsletterForm">
+                <div class="form-group">
+                    <input type="text" id="userName" placeholder="Your name">
+                    <div class="error-message name-error"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="userEmail" placeholder="Email address">
+                    <div class="error-message email-error"></div>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="userPass" placeholder="Create password">
+                    <div class="error-message pass-error"></div>
+                </div>
+                <button type="submit" class="cta-btn">Join Newsletter</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="secret-feature" id="secretTrigger">
+            🎰 Hover for daily tech fact!
+            <div class="tech-fact hidden">The first computer mouse was made of wood!</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
